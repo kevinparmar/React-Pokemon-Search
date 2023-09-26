@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../assets/styles/Navbar.css";
+import logo from '../assets/images/pokeball.svg'
 
 export default function Navbar(props) {
   const { darkMode } = props;
@@ -10,7 +11,7 @@ export default function Navbar(props) {
         <Link to="/" className={`navbar-link ${darkMode ? "dark-mode" : ""}`}>
           <img
             className="navbar-logo"
-            src={`src/assets/images/pokeball.svg`}
+            src={logo}
             alt="pokemon app logo"
           ></img>
         </Link>

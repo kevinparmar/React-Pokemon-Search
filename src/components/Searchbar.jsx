@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../assets/styles/Searchbar.css";
+import searchicon from '../assets/images/search-icon.png'
 
 export default function Searchbar(props) {
   const { darkMode } = props;
@@ -32,10 +33,7 @@ export default function Searchbar(props) {
         className={`search-button ${darkMode ? "dark-mode" : ""}`}
         onClick={() => props.handleSearch(searchText)}
       >
-        <img
-          className="searchbar-icon"
-          src="src/assets/images/search-icon.png"
-        ></img>
+        <img className="searchbar-icon" src={searchicon}></img>
       </button>
     </div>
   );

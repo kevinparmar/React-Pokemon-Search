@@ -1,4 +1,5 @@
 import "../assets/styles/DetailCard.css";
+import crossicon from "../assets/images/close-window.png";
 
 export default function DetailCard(props) {
   let { name, id, height, weight, abilities, species, stats, sprites } =
@@ -35,7 +36,7 @@ export default function DetailCard(props) {
       >
         <img
           className={`close-button-icon ${darkMode ? "dark-mode" : ""}`}
-          src="src/assets/images/close-window.png"
+          src={crossicon}
         ></img>
       </button>
       <div
