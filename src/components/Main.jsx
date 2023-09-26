@@ -7,12 +7,12 @@ import "../assets/styles/Main.css";
 import Searchbar from "./Searchbar";
 import Card from "./Card";
 import Pagination from "./Pagination";
-import { useEffect } from "react";
-
-const totalPokemonCount = await fetchTotalPokemonCount();
-const totalPages = Math.ceil(totalPokemonCount / 8);
+import { useState, useEffect } from "react";
 
 export default function Main(props) {
+
+  const [totalPokemonCount, setTotalPokemonCount] = useState(null);
+  
   const {
     pokemonData,
     setPokemonData,
@@ -34,6 +34,21 @@ export default function Main(props) {
 
   const start = pageNumber * 8 + 1;
   const end = start + 7;
+
+  useEffect(() => {
+    const fetchTotalCount = async () => {
+      try {
+        const totalCount = await fetchTotalPokemonCount();
+        setTotalPokemonCount(totalCount);
+      } catch (error) {
+        console.error("Error fetching total Pokemon count:", error);
+      }
+    };
+
+    fetchTotalCount();
+  }, []);
+
+  const totalPages = Math.ceil(totalPokemonCount / 8);
 
   useEffect(() => {
     setIsLoading(true);
