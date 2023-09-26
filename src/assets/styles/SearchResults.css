@@ -1,5 +1,5 @@
 .search-page-container {
-    background-image: url('src/assets/images/background22.png');
+    background-image: url('../images/background22.png');
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -45,7 +45,7 @@
 /*---------------------------------------- DARK MODE STYLES ---------------------------------------*/
 
 .search-page-container.dark-mode {
-    background-image: url('src/assets/images/background14.jpg');
+    background-image: url('../images/background14.jpg');
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;

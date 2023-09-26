@@ -1,2 +1,0 @@
-handle empty string in searchbar
-reload in searchpage

@@ -1,7 +1,7 @@
 .main {
     /* background-color: #E2E2E2; */
     min-height: 100vh;
-    background-image: url('src/assets/images/background22.png');
+    background-image: url('../images/background22.png');
     background-position: 0% 0%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 /*--------------------------------------- DARK MODE STYLES ------------------------------------------*/
 
 .main.dark-mode {
-    background-image: url('src/assets/images/background14.jpg');
+    background-image: url('../images/background14.jpg');
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
