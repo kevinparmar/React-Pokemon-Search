@@ -1,0 +1,99 @@
+.navbar {
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100px;
+    background-color: #fff;
+
+}
+
+.navbar-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.navbar-title {
+    color: black;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.toggler {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 10px;
+}
+
+.toggle-container {
+    width: 25px;
+    height: 13px;
+    background-color: white;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    box-sizing: content-box;
+    padding: 2px;
+}
+
+.toggle-slider {
+    height: 13px;
+    width: 13px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.toggle-light {
+    color: black;
+    /* text-shadow:
+            0px 0px 7px rgba(255, 255, 255, 1),
+            0px 0px 12px rgba(255, 255, 0, 1),
+            0px 0px 18px rgba(255, 255, 0, 1);*/
+    } 
+
+.toggle-dark {
+    color: rgb(151, 147, 147);
+}
+
+/* ------------------------------ DARK MODE STYLES ------------------------------------------------*/
+
+.navbar.dark-mode {
+    background-image: none;
+    background-color: black;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar-title.dark-mode {
+    color: white;
+    margin-right: auto;
+    margin-left: 10px;
+}
+
+.toggle-container.dark-mode {
+    justify-content: flex-end;
+    border: 1px solid white;
+    background-color: black;
+}
+
+.toggle-slider.dark-mode{
+    background-color: white;
+}
+
+.toggle-light.dark-mode {
+    color: rgb(151, 147, 147);
+    text-shadow: none;
+}
+
+.toggle-dark.dark-mode {
+    color: white;
+    text-shadow:
+        0px 0px 7px rgba(255, 255, 255, 1),
+        0px 0px 12px rgba(255, 255, 255, 1),
+        0px 0px 18px rgba(255, 255, 255, 0.5);
+}
+

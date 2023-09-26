@@ -1,0 +1,105 @@
+.card {
+    margin: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 280px;
+    height: 380px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 7px rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(17px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    cursor: pointer;
+    /* Add position relative for positioning the absolute elements */
+}
+
+.card-image-container {
+    justify-self: flex-end;
+    padding: 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 1px solid rgba(138, 138, 138);
+    position: relative;
+}
+
+.type-badges {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.type-badge,
+.id-badge {
+    height: 25px;
+    background-color: rgba(0, 0, 0, 1);
+    color: aliceblue;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    margin: 2px 2px;
+    padding: 0px 2px;
+}
+
+.id-badge {
+    width: 40px;
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    font-weight: 600;
+}
+
+.card-image {
+    width: 250px;
+    height: 250px;
+}
+
+.card-info-container {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+.pokemon-name {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0px 25px!important;
+}
+
+
+/*---------------------------------------------- DARK MODE STYLES ---------------------------------*/
+
+.card.dark-mode {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(106, 106, 106, 0.38);
+    box-shadow: 0 2px 7px rgba(255, 255, 255, 0.25);
+}
+
+.type-badge.dark-mode,
+.id-badge.dark-mode {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(106, 106, 106, 0.38);
+}
+
+.card-image-container {
+    border-bottom: 1px solid rgba(106, 106, 106,0.5);
+}
+
+.card-info-container.dark-mode {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-name.dark-mode {
+    color: white;
+    text-shadow: 
+        0px 0px 7px rgba(255, 255, 255, 1);
+}

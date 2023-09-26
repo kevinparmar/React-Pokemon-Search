@@ -1,0 +1,155 @@
+.detail-card {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(17px);
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    color: white;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.close-button-icon{
+    height: 25px;
+}
+
+.detail-card-image-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.detail-card-image {
+    margin: 10px 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.detail-pokemon-name {
+    justify-self: center;
+    margin-left: 120px;
+    margin-right: 25px;
+    font-size: 2rem;
+}
+
+.detail-card-info-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+    margin: 5px 0px;
+}
+
+.body-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.ability-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 5px;
+}
+
+.height-container,
+.weight-container {
+    font-size: 2rem;
+    font-weight: 400;
+    color: whitesmoke;
+}
+
+.ability {
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+.stats-container {
+    padding: 15px;
+}
+
+.stat-bar {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.stat-name {
+    width: 200px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(0,0,0);
+    /* You can change the color to your preference */
+}
+
+
+/*---------------------------------------- DARK MODE STYLES -----------------------------------------*/
+
+.detail-card.dark-mode {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(17px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.close-button.dark-mode {
+    background-color: rgba(255, 255, 255, 0.4);
+
+}
+
+.detail-card-image-container.dark-mode {
+    background-color: transparent;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-pokemon-name.dark-mode {
+    color: white;
+}
+
+.progress.dark-mode {
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.progress-bar.dark-mode {
+    background-color: rgba(255, 255, 255);
+    color: black;
+}

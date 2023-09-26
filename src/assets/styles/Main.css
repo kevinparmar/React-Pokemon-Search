@@ -1,0 +1,53 @@
+.main {
+    /* background-color: #E2E2E2; */
+    min-height: 100vh;
+    background-image: url('src/assets/images/background22.png');
+    background-position: 0% 0%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-color: transparent;
+}
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.card-section {
+    padding: 40px 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.pagination-section {
+    padding: 15px;
+}
+
+.loading {
+    text-align: center;
+}
+
+/*--------------------------------------- DARK MODE STYLES ------------------------------------------*/
+
+.main.dark-mode {
+    background-image: url('src/assets/images/background14.jpg');
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box;
+    background-attachment: scroll;
+    background-color: transparent;
+}
+
+.loading.dark-mode {
+    color: white;
+}

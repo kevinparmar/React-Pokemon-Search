@@ -1,0 +1,57 @@
+.searchbar {
+    height: 40px;
+    width: 350px;
+    border: 2px solid white;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-indent: 10px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.search-button {
+    height: 40px;
+    width: 50px;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    vertical-align: middle;
+}
+
+.searchbar-icon {
+    height: 20px;
+}
+
+/*--------------------------------------- DARK MODE STYLES --------------------------------------------*/
+
+.search-button.dark-mode {
+    border: 1px solid white;
+}
+
+/*---------------------------------------- MEDIA QUERIES ----------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+    .searchbar {
+        width: 100%;
+        /* Use full width on smaller screens */
+        border-radius: 20px;
+        /* Adjust border-radius for full width */
+        border-right: 2px solid white;
+        /* Add right border */
+        border-bottom: none;
+        /* Remove bottom border */
+        margin-bottom: 10px;
+        /* Add some spacing between input and button */
+    }
+
+    .search-button {
+        width: 100%;
+        /* Use full width on smaller screens */
+        border-radius: 20px;
+        /* Adjust border-radius for full width */
+    }
+}
