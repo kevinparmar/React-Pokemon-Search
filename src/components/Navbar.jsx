@@ -10,9 +10,7 @@ export default function Navbar(props) {
         <Link to="/" className={`navbar-link ${darkMode ? "dark-mode" : ""}`}>
           <img
             className="navbar-logo"
-            src={`src/assets/images/pokeball-${
-              darkMode ? "white" : "black"
-            }.png`}
+            src={`src/assets/images/pokeball.svg`}
             alt="pokemon app logo"
           ></img>
         </Link>
