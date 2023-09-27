@@ -45,7 +45,7 @@ export default function App() {
     if(searchText === ""){
       setSearchedPokemon(null);
     } else {
-      const pokemon = await fetchSinglePokemonData(searchText);
+      const pokemon = await fetchSinglePokemonData(searchText.toLowerCase());
       if (pokemon !== null) {
         setSearchedPokemon(pokemon);
       } else {
