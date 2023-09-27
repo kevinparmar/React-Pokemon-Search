@@ -37,21 +37,14 @@
 @media screen and (max-width: 768px) {
     .searchbar {
         width: 100%;
-        /* Use full width on smaller screens */
         border-radius: 20px;
-        /* Adjust border-radius for full width */
         border-right: 2px solid white;
-        /* Add right border */
         border-bottom: none;
-        /* Remove bottom border */
         margin-bottom: 10px;
-        /* Add some spacing between input and button */
     }
 
     .search-button {
         width: 100%;
-        /* Use full width on smaller screens */
         border-radius: 20px;
-        /* Adjust border-radius for full width */
     }
 }

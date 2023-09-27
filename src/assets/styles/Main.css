@@ -1,5 +1,4 @@
 .main {
-    /* background-color: #E2E2E2; */
     min-height: 100vh;
     background-image: url('../images/background22.png');
     background-position: 0% 0%;
@@ -7,7 +6,7 @@
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-color: transparent;
 }
 
@@ -44,10 +43,19 @@
     background-repeat: no-repeat;
     background-origin: border-box;
     background-clip: border-box;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-color: transparent;
 }
 
 .loading.dark-mode {
     color: white;
+}
+
+/*----------------------------------------- MEDIA QUERIES --------------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .main.dark-mode {
+        background-image: none;
+        background-color: black;
+    }
 }

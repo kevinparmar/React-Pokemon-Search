@@ -1,4 +1,3 @@
-//before changes
 import {
   fetchTotalPokemonCount,
   fetchPokemonRangeData,

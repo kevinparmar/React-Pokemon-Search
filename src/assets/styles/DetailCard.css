@@ -89,16 +89,16 @@
 }
 
 .stats-container {
-    padding: 15px;
+    padding: 10px;
 }
 
 .stat-bar {
     margin-bottom: 10px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 160px 1fr;
 }
 
 .stat-name {
-    width: 200px;
     font-weight: bold;
     margin-bottom: 5px;
     color: white;
@@ -118,7 +118,6 @@
     color: white;
     border-radius: 10px;
     background-color: rgba(0,0,0);
-    /* You can change the color to your preference */
 }
 
 
@@ -127,11 +126,11 @@
 .detail-card.dark-mode {
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(17px);
-    border: 2px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.4);
 }
 
 .close-button.dark-mode {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255);
 
 }
 
@@ -152,4 +151,41 @@
 .progress-bar.dark-mode {
     background-color: rgba(255, 255, 255);
     color: black;
+}
+
+
+/*--------------------------------------------- MEDIA QUERIES --------------------------------------*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .detail-card{
+        width: 350px;
+        height: 500px;
+    }
+
+    .detail-card-image {
+        width: 70px;
+        height: 70px;
+    }
+
+    .detail-pokemon-name {
+        font-size: 1.8rem;
+        margin: 0px;
+    }
+
+    .height-container,
+    .weight-container {
+        font-size: 2.3rem;
+        font-weight: 400;
+        color: whitesmoke;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .height-container,
+    .weight-container {
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: whitesmoke;
+    }
+
 }

@@ -42,11 +42,15 @@ export default function App() {
   }
 
   async function search(searchText) {
-    const pokemon = await fetchSinglePokemonData(searchText);
-    if (pokemon !== null) {
-      setSearchedPokemon(pokemon);
-    } else {
+    if(searchText === ""){
       setSearchedPokemon(null);
+    } else {
+      const pokemon = await fetchSinglePokemonData(searchText);
+      if (pokemon !== null) {
+        setSearchedPokemon(pokemon);
+      } else {
+        setSearchedPokemon(null);
+      }
     }
     routerNavigate("/search-results");
   }
