@@ -1,8 +1,14 @@
 import "../assets/styles/Card.css";
 
 export default function Card(props) {
-  const { darkMode } = props;
-  const type_badges = props.types.map((type, index) => {
+  const { darkMode, sprites} = props;
+  
+  const img =
+    sprites.other.dream_world.front_default !== null
+      ? sprites.other.dream_world.front_default
+      : sprites.other["official-artwork"].front_default;
+
+   const type_badges = props.types.map((type, index) => {
     return (
       <span
         key={`${type.name}-${index}`}
@@ -30,7 +36,7 @@ export default function Card(props) {
       <div className={`card-image-container ${darkMode ? "dark-mode" : ""}`}>
         <img
           className={`card-image ${darkMode ? "dark-mode" : ""}`}
-          src={props.img}
+          src={img}
           alt={props.name}
         ></img>
       </div>

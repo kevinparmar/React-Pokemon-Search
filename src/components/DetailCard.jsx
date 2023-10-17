@@ -6,6 +6,11 @@ export default function DetailCard(props) {
     props.pokemonData;
   const { darkMode } = props;
 
+  const img =
+    sprites.other.dream_world.front_default !== null
+      ? sprites.other.dream_world.front_default
+      : sprites.other.home.front_default;
+
   abilities = abilities.map((ability, index) => (
     <h3 key={index} className="ability">
       {ability.ability.name}
@@ -44,7 +49,7 @@ export default function DetailCard(props) {
       >
         <img
           className="detail-card-image"
-          src={sprites.other.dream_world.front_default}
+          src={img}
         ></img>
         <h1 className={`detail-pokemon-name ${darkMode ? "dark-mode" : ""}`}>
           {name.toUpperCase()}

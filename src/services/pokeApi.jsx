@@ -4,6 +4,7 @@ async function fetchSinglePokemonData(pokemonNameOrId) {
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
+      console.log("Cannot find pokemon")
       return null;
     }
 

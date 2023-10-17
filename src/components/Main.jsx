@@ -63,7 +63,7 @@ export default function Main(props) {
       key={pokemon.id}
       id={pokemon.id}
       name={pokemon.name}
-      img={pokemon.sprites.other.dream_world.front_default}
+      sprites={pokemon.sprites}
       types={pokemon.types}
       height={pokemon.height}
       weight={pokemon.weight}
