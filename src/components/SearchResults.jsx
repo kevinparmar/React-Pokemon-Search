@@ -1,6 +1,7 @@
 import Card from "./Card";
 import "../assets/styles/SearchResults.css";
 import { useNavigate } from "react-router-dom";
+import empty_pokeball from "../assets/images/empty-pokeball.png"
 
 export default function SearchResults(props) {
   const { pokemon, expandCard, darkMode } = props;
@@ -21,8 +22,8 @@ export default function SearchResults(props) {
           darkMode={darkMode}
         />
       ) : (
-        <div className={`error-message-text ${darkMode ? "dark-mode" : ""}`}>
-          We could not find the Pokémon you searched for
+        <div className={`error-message-container ${darkMode ? "dark-mode" : ""}`}>
+          <h1>Oh no, a wild error appeared! Pokémon not found.</h1>
         </div>
       )}
       <button

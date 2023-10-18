@@ -7,6 +7,7 @@ import Searchbar from "./Searchbar";
 import Card from "./Card";
 import Pagination from "./Pagination";
 import { useState, useEffect } from "react";
+import pokeball from "../assets/images/pokeball.svg"
 
 export default function Main(props) {
 
@@ -56,6 +57,7 @@ export default function Main(props) {
       setIsLoading(false);
     }
     fetchData();
+    //setTimeout(fetchData, 5000); // 5000 milliseconds = 5 seconds
   }, [pageNumber]);
 
   const cards = pokemonData.map((pokemon) => (
@@ -90,7 +92,12 @@ export default function Main(props) {
       </section>
 
       {isLoading && (
-        <h1 className={`loading ${darkMode ? "dark-mode" : ""}`}>Loading...</h1>
+        <div className="loadingMessage">
+          <h1 className={`loading ${darkMode ? "dark-mode" : ""}`}>
+            Catching 'em all...
+          </h1>
+          <img className="loadingPokeball" src={pokeball}></img>
+        </div>
       )}
 
       <section className={`card-section ${darkMode ? "dark-mode" : ""}`}>

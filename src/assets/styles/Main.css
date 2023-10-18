@@ -31,9 +31,21 @@
 }
 
 .loading {
-    text-align: center;
+    font-size: 3rem;
 }
 
+.loadingMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingPokeball{
+    width: 100px;
+    height: 100px;
+    animation: rotate 1s linear infinite;
+}
 /*--------------------------------------- DARK MODE STYLES ------------------------------------------*/
 
 .main.dark-mode {
@@ -49,6 +61,7 @@
 
 .loading.dark-mode {
     color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 /*----------------------------------------- MEDIA QUERIES --------------------------------------------*/
@@ -57,5 +70,17 @@
     .main.dark-mode {
         background-image: none;
         background-color: black;
+    }
+}
+
+/*--------------------------------------  ANIMATION KEYFRAMES -----------------------------------------*/
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
     }
 }

@@ -15,10 +15,8 @@
     justify-items: center;
 }
 
-.error-message-text {
+.error-message-container {
     align-self: flex-start;
-    font-size: 2rem;
-    font-weight: 600;
     color: black;
     text-align: center;
 }
@@ -57,7 +55,7 @@
     background-color: transparent;
 }
 
-.error-message-text.dark-mode {
+.error-message-container.dark-mode {
     color: white;
 }
 
